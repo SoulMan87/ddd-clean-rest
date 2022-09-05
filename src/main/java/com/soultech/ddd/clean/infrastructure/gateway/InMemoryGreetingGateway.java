@@ -13,10 +13,10 @@ import java.util.stream.Stream;
 public class InMemoryGreetingGateway implements GreetingGatewayOutputPort {
 
     private static final Map<String, String> greetings =
-            Stream.of(new String[]{"Jorge", "Hola %s, como vas? "},
-                            new String[]{"Hernán", "Como estás %s?"},
-                            new String[]{"Don Polo", "Que más pues %s?"},
-                            new String[]{"Katherine", "Como está su merced %s"})
+            Stream.of(new String[]{"Francisco", "Hola %s, como vas? "},
+                            new String[]{"Román", "Como estás %s?"},
+                            new String[]{"Marcela", "Que más pues %s?"},
+                            new String[]{"Gabriel", "Como está su merced %s"})
                     .collect(Collectors.toUnmodifiableMap(pair -> pair[0], pair -> pair[1]));
 
     @Override
